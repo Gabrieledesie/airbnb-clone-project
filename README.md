@@ -1,58 +1,67 @@
-# Airbnb Clone Project
+# Airbnb Clone Frontend Project
 
-This project simulates an Airbnb-like booking platform. It focuses on backend systems, database, APIs, security, and CI/CD pipelines.
+This project is a full-stack clone of Airbnb focusing on the frontend. It aims to build a web app where users browse listings, view details, and make bookings. The tech stack includes HTML, CSS, JavaScript (React), Git, and Figma.
 
-Technologies used: Django, MySQL, GraphQL, Docker, GitHub Actions.
+## UI/UX Design Planning
 
-## Team Roles
+### Design Goals
+- Intuitive booking flow
+- Visual consistency
+- Fast loading times
+- Mobile responsiveness
 
-- Backend Developer: Designs and builds the server-side logic and API.
-- Database Administrator: Manages database design, optimization, and backups.
-- Frontend Developer: Creates the user interface and user experience.
-- DevOps Engineer: Builds and maintains the CI/CD pipeline and deployment.
-- Security Specialist: Ensures API security, authentication, and data protection.
+### Key Features
+- Property search and filtering
+- Detailed property viewing
+- Secure checkout
+- User authentication
 
-## Technology Stack
+### Primary Pages
+| Page                  | Description                                      |
+|-----------------------|------------------------------------------------|
+| Property Listing View  | Grid of properties with filters                  |
+| Listing Detailed View  | Full property info, images, booking form         |
+| Simple Checkout View   | Payment and booking confirmation                  |
 
-- Django: A web framework used to build the RESTful API backend.
-- MySQL: Relational database to store user, property, booking, and payment data.
-- GraphQL: API query language to request precise data from the backend.
-- Docker: Containerization tool to package and deploy the application consistently.
-- GitHub Actions: Automates build, test, and deployment processes (CI/CD).
+### Importance of User-Friendly Design
+Good design reduces friction, boosts user satisfaction, and improves conversion. Clear navigation and responsiveness are key.
 
-## Database Design
+## More UI/UX Planning
 
-Entities:
-- Users: id, name, email, password, role
-- Properties: id, owner_id (User), title, description, location, price
-- Bookings: id, user_id, property_id, start_date, end_date, status
-- Reviews: id, user_id, property_id, rating, comment
-- Payments: id, booking_id, amount, payment_date, status
+### Color Styles
+- Primary: #FF5A5F
+- Secondary: #008489
+- Background: #FFFFFF
+- Text: #222222
+- Secondary Text: #717171
 
-Relationships:
-- A user can own multiple properties.
-- A booking belongs to one user and one property.
-- Users can leave many reviews for different properties.
-- Each booking has a related payment.
+### Typography
+- Primary Font: Circular, Medium (500), 16px
+- Headings: Circular, Bold (700), 24px-32px
+- Secondary Text: Circular, Book (400), 14px
 
-## Feature Breakdown
+Understanding design properties is important to ensure consistency and match user expectations across the UI.
 
-- User Management: Allows users to register, log in, and manage profiles.
-- Property Management: Users can list and edit properties for rent.
-- Booking System: Users can search properties and make bookings.
-- Review System: Users can leave feedback on properties.
-- Payment Processing: Handles payment transactions securely.
+## Project Roles and Responsibilities
 
-## API Security
+- Project Manager: Coordinates team and timeline
+- Frontend Developers: Build UI components and responsiveness
+- Backend Developers: Create APIs and database management
+- Designers: Mockups, design system, UX quality
+- QA/Testers: Write and perform tests, report bugs
+- DevOps Engineers: Manage deployment and CI/CD
+- Product Owner: Prioritizes features and represents stakeholders
+- Scrum Master: Facilitates processes and meetings
 
-- Authentication: Verify user identity, e.g., using JWT tokens.
-- Authorization: Control access to resources based on user roles.
-- Rate Limiting: Prevent abuse by limiting API call frequency.
-- Data Encryption: Protect sensitive information in transit.
-- Input Validation: Guard against injection attacks and bad data.
+## UI Component Patterns
 
-## CI/CD Pipeline
+We plan to build reusable components such as:
 
-CI/CD pipelines automate building, testing, and deployment to speed up development and reduce errors.
+- Navbar: Logo, search bar, user navigation, responsive menu
+- Property Card: Image, price, location, rating, favorite button
+- Footer: Links, company info, social media, copyright
 
-Tools like GitHub Actions help run tests automatically on every change and deploy code using Docker containers for consistency.
+These components ensure consistency and ease of maintenance.
+
+---
+
